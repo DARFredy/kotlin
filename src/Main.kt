@@ -14,9 +14,7 @@ open class Dwelling(private var residents: Int) {
     fun getRoom() {
         if (hasRoom()) {
             residents++
-            println("¡Habitación asignada! 🌟")
         } else {
-            println("No hay espacio disponible 😞")
         }
     }
 
@@ -72,7 +70,6 @@ class RoundTower(
 }
 
 fun main() {
-    println("🏠 Bienvenido al simulador de viviendas Kotlin 🏡")
 
     val squareCabin = SquareCabin(3, 5.0)
     val roundHut = RoundHut(2, 10.0)
